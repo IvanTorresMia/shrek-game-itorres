@@ -1,0 +1,13 @@
+
+.images {
+    max-width: 200px;
+    margin: 20px;
+    height: 250px;
+    box-shadow: gray 4px 4px;
+}
+
+.img-container :hover {
+    cursor: pointer;
+    border: gray 2px solid;
+}
+

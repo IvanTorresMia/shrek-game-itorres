@@ -1,0 +1,74 @@
+[
+    {
+        "id": 1,
+        "name": "shrek",
+        "image": "./assets/shrek1.jpg",
+        "clicked": false
+    },
+    {
+        "id": 2,
+        "name": "cat",
+        "image": "./assets/cat.jpg",
+        "clicked": false
+    },
+    {
+        "id": 3,
+        "name": "babyshrek",
+        "image": "./assets/babyshrek.jpg",
+        "clicked": false
+    },
+    {
+        "id": 4,
+        "name": "cookieman",
+        "image": "./assets/cookie-man.jpg",
+        "clicked": false
+    },
+    {
+        "id": 5,
+        "name": "donkey",
+        "image": "./assets/donkey.jpg",
+        "clicked": false
+    },
+    {
+        "id": 6,
+        "name": "Fiona",
+        "image": "./assets/fiona.jpg",
+        "clicked": false
+    },
+    {
+        "id": 7,
+        "name": "OgarFiona",
+        "image": "./assets/ogarFione.jpg",
+        "clicked": false
+    },
+    {
+        "id": 8,
+        "name": "Pigs",
+        "image": "./assets/pigs.jpg",
+        "clicked": false
+    },
+    {
+        "id": 9,
+        "name": "King",
+        "image": "./assets/King.jpg",
+        "clicked": false
+    },
+    {
+        "id": 10,
+        "name": "LordF",
+        "image": "./assets/Lord-f.jpg",
+        "clicked": false
+    },
+    {
+        "id": 11,
+        "name": "ShrekHuman",
+        "image": "./assets/ShrekHuman.jpg",
+        "clicked": false
+    },
+    {
+        "id": 12,
+        "name": "fairy",
+        "image": "./assets/fairy.jpg",
+        "clicked": false
+    }
+]
