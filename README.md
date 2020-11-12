@@ -1,70 +1,135 @@
-# Getting Started with Create React App
+# Shrek Game 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+## Table of Contents
+* [Description](#Description)
+* [Technologies](#Technologies)
+* [Features](#Features)
+* [Code](#Code)
+* [Author](#Author)
+* [Credits](#Credits)
+* [License](#License)
 
-### `npm start`
+## Description 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies
+* [JavaScript](https://www.w3schools.com/js/)
+* [Bootstrap](https://getbootstrap.com/)
+* [React](https://reactjs.org/)
+* [ReactDom](https://reactjs.org/docs/react-dom.html)
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Features
+![GIF](./shrek.gif)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# Code
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## App.js
 
-### `npm run eject`
+*  Here I am setting a state for the score, characters and a starting message. I also made a function to handle the click which randomizes the images, sets a new state to the score when ever it's clicked. This function will be called in our form below. 
+```
+ state = {
+    // THIS IS STORING ALL MY JSON FILE 
+    Characters: Characters,
+    score: 0,
+    highScore: 0,
+    message: "Click a picture to start"
+  };
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  handleClick = (event) => {
+    console.log(event.target);
+    const currentId = event.target.getAttribute("data-id");
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+    console.log(hasBeenClicked);
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+this.setState({message: "Let's play"})
 
-## Learn More
+if (!hasBeenClicked.includes(currentId)) {
+  hasBeenClicked.push(currentId)
+  const newCount = this.state.score + 1;
+  // const highScoreCount = this.state.highScore +1;
+  this.setState({score: newCount});
+  this.setState({message: "Nice!"})
+  if (newCount > this.state.highScore) {
+    this.setState({highScore: newCount})
+  }
+} else {
+  this.setState({score: 0});
+  this.setState({message: "Wrong Buddy!"})
+  hasBeenClicked = [];
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+}
 
-### Code Splitting
+      // Shuffles the array of characters
+      const arr = this.state.Characters;
+      for (let i = arr.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * arr.length);
+        let temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+      }
+      this.setState({ Characters: arr });
+  };
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+  ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## App.js Continue
+* Here we have our form. This form was created in the components folder and was given some props. We took those props here and gave them values. 
 
-### Making a Progressive Web App
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+  render() {
+    return (
+      <Wrapper>
+        <NavBar
+        score = {this.state.score}
+        topScore ={this.state.highScore}
+        message={this.state.message}
+        />
+        <Jumbo />
+        <div className="container">
+          <div className="row">
+        {this.state.Characters.map((character) => (
+          <Card
+            key={character.id}
+            imageURL={character.image}
+            id={character.id}
+            alt={character.name}
+            handleClick={this.handleClick}
+         
+          />
+          
+        ))}
+</div>
+</div>
+      </Wrapper>
+    );
+  }
 
-### Advanced Configuration
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Author
+Ivan Torres
+* [GitHub-Repo]()
+* [linkedIn](www.linkedin.com/in/ivan-torres-0828931b2)
+* [Portfolio](https://ivantorresmia.github.io/IvanTorres-portfolio/)
+* [Deployed-Link]()
 
-### `npm run build` fails to minify
+## Credits
+* Credits for this homework assignment go out to Jerome, Manuel, Kerwin, Roger, and all of my classmates who helped me in study sessions. As well as my tutor who helped me a ton with understanding this homework assignment. 
+* [StackOverFlow](https://stackoverflow.com/)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+## License]
+[MIT](https://choosealicense.com/licenses/mit/#) license 
