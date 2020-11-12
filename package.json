@@ -1,6 +1,6 @@
 {
-  "homepage": "https://ivantorresmia.github.io/shrek_game_itorres/",
-  "name": "shreck_click_game",
+  "homepage": "https://ivantorresmia.github.io/shrek-game-itorres/",
+  "name": "shrek-click-game",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
