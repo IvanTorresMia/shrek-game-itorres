@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/shrek_game_itorres/static/css/main.67b53e76.chunk.css",
+    "main.js": "/shrek_game_itorres/static/js/main.03528cf2.chunk.js",
+    "main.js.map": "/shrek_game_itorres/static/js/main.03528cf2.chunk.js.map",
+    "runtime-main.js": "/shrek_game_itorres/static/js/runtime-main.6e8d2215.js",
+    "runtime-main.js.map": "/shrek_game_itorres/static/js/runtime-main.6e8d2215.js.map",
+    "static/js/2.d2150c2d.chunk.js": "/shrek_game_itorres/static/js/2.d2150c2d.chunk.js",
+    "static/js/2.d2150c2d.chunk.js.map": "/shrek_game_itorres/static/js/2.d2150c2d.chunk.js.map",
+    "static/js/3.eaeb5310.chunk.js": "/shrek_game_itorres/static/js/3.eaeb5310.chunk.js",
+    "static/js/3.eaeb5310.chunk.js.map": "/shrek_game_itorres/static/js/3.eaeb5310.chunk.js.map",
+    "index.html": "/shrek_game_itorres/index.html",
+    "static/css/main.67b53e76.chunk.css.map": "/shrek_game_itorres/static/css/main.67b53e76.chunk.css.map",
+    "static/js/2.d2150c2d.chunk.js.LICENSE.txt": "/shrek_game_itorres/static/js/2.d2150c2d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.6e8d2215.js",
+    "static/js/2.d2150c2d.chunk.js",
+    "static/css/main.67b53e76.chunk.css",
+    "static/js/main.03528cf2.chunk.js"
+  ]
+}
