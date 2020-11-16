@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, useState } from "react";
 import NavBar from "./components/Navbar";
 import Jumbo from "./components/Jumbo";
 import Wrapper from "./components/Wrapper";
@@ -16,6 +16,8 @@ class App extends Component {
     highScore: 0,
     message: "Click a picture to start"
   };
+
+
 
 
   handleClick = (event) => {
