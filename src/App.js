@@ -1,9 +1,10 @@
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 import NavBar from "./components/Navbar";
 import Jumbo from "./components/Jumbo";
 import Wrapper from "./components/Wrapper";
 import Characters from "./Characters.js";
 import Card from "./components/Card";
+import './App.css'
 
 let hasBeenClicked = [];
 

@@ -1,10 +1,9 @@
 import React from 'react';
-import './style.css'
 
-function NavBar(props) {
+function NavBar() {
 
     return (
-        <div className="jumbotron">
+        <div className="jumbotron hero">
             <h1>Shrek is the best</h1>
         </div>
 
