@@ -1,7 +1,47 @@
-@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap");
 
 body {
-  font-family: 'New Tegomin', serif;
+  font-family: "New Tegomin", serif;
+  background-color: rgb(53, 61, 83);
+  color: white;
+}
+
+/* message color change */
+.scoreColor {
+  color:rgb(4, 110, 4)
+}
+
+.topScoreColor {
+  color: green;
+}
+
+
+.message-text {
+  color: rgb(4, 110, 4);
+}
+
+.wrong {
+  color: red;
+  animation:  shake 0.8s  ;
+}
+.correct {
+  color: blue;
+}
+
+@keyframes shake{
+  0%{
+    transform: translateX(0)
+  }
+  25%{
+    transform: translateX(25px);
+  }
+    
+  50%{
+    transform: translateX(-25px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
 }
 
 /* Nav */
@@ -21,14 +61,18 @@ body {
   height: 100%;
   width: 100%;
   text-align: center;
+  position: relative;
 }
 
 .Score {
+  background-color: rgb(186,186,186);
+  color: black;
   border: 1px solid black;
   width: 40%;
   margin-left: auto;
   margin-right: auto;
   border-radius: 2rem;
+  box-shadow: rgb(159, 151, 198) 4px 4px;
 }
 
 /* Images */
@@ -39,18 +83,31 @@ body {
   margin: 20px;
   max-height: 200px;
   min-height: 200px;
-  box-shadow: gray 4px 4px;
+  box-shadow: rgb(159, 151, 198) 4px 4px;
   border-radius: 1rem;
 }
 
 .img-container :hover {
   cursor: pointer;
   border: gray 2px solid;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
 }
-
 
 .card-row {
   display: flex;
   justify-content: center;
   flex-direction: row;
+}
+
+.pause-button {
+  position: absolute;
+  top: 2%;
+  right: 20%;
+}
+.pause-button button {
+  background-color: rgb(53, 61, 83);
+  border: none;
+  width: 5rem;
+  height: 3rem;
 }
