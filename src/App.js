@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import NavBar from "./components/Navbar";
-import Jumbo from "./components/Jumbo";
 import Wrapper from "./components/Wrapper";
 import Characters from "./Characters.js";
 import Card from "./components/Card";
+import Score from "./components/Score"
 import './App.css'
 
 let hasBeenClicked = [];
@@ -53,15 +53,17 @@ class App extends Component {
 
   render() {
     return (
+      <>
+      <NavBar />
+    
       <Wrapper>
-        <NavBar
-          score={this.state.score}
-          topScore={this.state.highScore}
-          message={this.state.message}
-        />
-        <Jumbo />
-        <div className="container">
-          <div className="row">
+      <Score
+           score={this.state.score}
+           topScore={this.state.highScore}
+           message={this.state.message}
+      />
+        <div className="container card-container">
+          <div className="row card-row">
             {this.state.Characters.map((character) => (
               <Card
                 key={character.id}
@@ -74,6 +76,7 @@ class App extends Component {
           </div>
         </div>
       </Wrapper>
+      </>
     );
   }
 }
