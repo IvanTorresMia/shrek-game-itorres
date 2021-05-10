@@ -1,22 +1,34 @@
 {
   "files": {
-    "main.css": "/shrek-game-itorres/static/css/main.67b53e76.chunk.css",
-    "main.js": "/shrek-game-itorres/static/js/main.30a5d960.chunk.js",
-    "main.js.map": "/shrek-game-itorres/static/js/main.30a5d960.chunk.js.map",
-    "runtime-main.js": "/shrek-game-itorres/static/js/runtime-main.5bc56d6f.js",
-    "runtime-main.js.map": "/shrek-game-itorres/static/js/runtime-main.5bc56d6f.js.map",
-    "static/js/2.5fdb94f3.chunk.js": "/shrek-game-itorres/static/js/2.5fdb94f3.chunk.js",
-    "static/js/2.5fdb94f3.chunk.js.map": "/shrek-game-itorres/static/js/2.5fdb94f3.chunk.js.map",
-    "static/js/3.7357f866.chunk.js": "/shrek-game-itorres/static/js/3.7357f866.chunk.js",
-    "static/js/3.7357f866.chunk.js.map": "/shrek-game-itorres/static/js/3.7357f866.chunk.js.map",
+    "main.css": "/shrek-game-itorres/static/css/main.8f4d1873.chunk.css",
+    "main.js": "/shrek-game-itorres/static/js/main.34f3c0f8.chunk.js",
+    "main.js.map": "/shrek-game-itorres/static/js/main.34f3c0f8.chunk.js.map",
+    "runtime-main.js": "/shrek-game-itorres/static/js/runtime-main.75fbe396.js",
+    "runtime-main.js.map": "/shrek-game-itorres/static/js/runtime-main.75fbe396.js.map",
+    "static/js/2.2b53cdd9.chunk.js": "/shrek-game-itorres/static/js/2.2b53cdd9.chunk.js",
+    "static/js/2.2b53cdd9.chunk.js.map": "/shrek-game-itorres/static/js/2.2b53cdd9.chunk.js.map",
+    "static/js/3.37f82f07.chunk.js": "/shrek-game-itorres/static/js/3.37f82f07.chunk.js",
+    "static/js/3.37f82f07.chunk.js.map": "/shrek-game-itorres/static/js/3.37f82f07.chunk.js.map",
     "index.html": "/shrek-game-itorres/index.html",
-    "static/css/main.67b53e76.chunk.css.map": "/shrek-game-itorres/static/css/main.67b53e76.chunk.css.map",
-    "static/js/2.5fdb94f3.chunk.js.LICENSE.txt": "/shrek-game-itorres/static/js/2.5fdb94f3.chunk.js.LICENSE.txt"
+    "static/css/main.8f4d1873.chunk.css.map": "/shrek-game-itorres/static/css/main.8f4d1873.chunk.css.map",
+    "static/js/2.2b53cdd9.chunk.js.LICENSE.txt": "/shrek-game-itorres/static/js/2.2b53cdd9.chunk.js.LICENSE.txt",
+    "static/media/4_29.0103f8a1.mp3": "/shrek-game-itorres/static/media/4_29.0103f8a1.mp3",
+    "static/media/Lord-f.ed71e9eb.jpg": "/shrek-game-itorres/static/media/Lord-f.ed71e9eb.jpg",
+    "static/media/ShrekHuman.85f602ab.jpg": "/shrek-game-itorres/static/media/ShrekHuman.85f602ab.jpg",
+    "static/media/cat.7b88295b.jpg": "/shrek-game-itorres/static/media/cat.7b88295b.jpg",
+    "static/media/cookie-man.72dd7f08.jpg": "/shrek-game-itorres/static/media/cookie-man.72dd7f08.jpg",
+    "static/media/donkey.0a341fb1.jpg": "/shrek-game-itorres/static/media/donkey.0a341fb1.jpg",
+    "static/media/fairy.acbda603.jpg": "/shrek-game-itorres/static/media/fairy.acbda603.jpg",
+    "static/media/fiona.92ca996b.jpg": "/shrek-game-itorres/static/media/fiona.92ca996b.jpg",
+    "static/media/ogarFione.5908d98d.jpg": "/shrek-game-itorres/static/media/ogarFione.5908d98d.jpg",
+    "static/media/pigs.dcae7f1c.jpg": "/shrek-game-itorres/static/media/pigs.dcae7f1c.jpg",
+    "static/media/play.853a892b.png": "/shrek-game-itorres/static/media/play.853a892b.png",
+    "static/media/shrek1.99ac293b.jpg": "/shrek-game-itorres/static/media/shrek1.99ac293b.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.5bc56d6f.js",
-    "static/js/2.5fdb94f3.chunk.js",
-    "static/css/main.67b53e76.chunk.css",
-    "static/js/main.30a5d960.chunk.js"
+    "static/js/runtime-main.75fbe396.js",
+    "static/js/2.2b53cdd9.chunk.js",
+    "static/css/main.8f4d1873.chunk.css",
+    "static/js/main.34f3c0f8.chunk.js"
   ]
 }
