@@ -8,13 +8,12 @@ body {
 
 /* message color change */
 .scoreColor {
-  color:rgb(4, 110, 4)
+  color: rgb(4, 110, 4);
 }
 
 .topScoreColor {
   color: green;
 }
-
 
 .message-text {
   color: rgb(4, 110, 4);
@@ -22,24 +21,24 @@ body {
 
 .wrong {
   color: red;
-  animation:  shake 0.8s  ;
+  animation: shake 0.8s;
 }
 .correct {
   color: blue;
 }
 
-@keyframes shake{
-  0%{
-    transform: translateX(0)
+@keyframes shake {
+  0% {
+    transform: translateX(0);
   }
-  25%{
+  25% {
     transform: translateX(25px);
   }
-    
-  50%{
+
+  50% {
     transform: translateX(-25px);
   }
-  100%{
+  100% {
     transform: translateX(0px);
   }
 }
@@ -72,7 +71,7 @@ body {
 }
 
 .Score {
-  background-color: rgb(186,186,186);
+  background-color: rgb(186, 186, 186);
   color: black;
   border: 1px solid black;
   width: 40%;
@@ -116,7 +115,6 @@ body {
   }
 }
 
-
 .img-container :hover {
   cursor: pointer;
   border: gray 2px solid;
@@ -138,6 +136,12 @@ body {
 }
 .pause-button a {
   border: none;
+  padding-bottom: 0.5rem;
+
+}
+.pause-button a:hover {
+  border: 0.1rem solid black;
+  border-radius: 1rem;
 }
 .pause-button img {
   width: 50px;
@@ -145,8 +149,9 @@ body {
 
 @media only screen and (max-width: 500px) {
   .pause-button {
-  right: 40%;
-  top: 17%;
+    right: 10%;
+    top: 100%;
+    bottom: 0%;
   }
   .pause-button a {
     width: 2rem;
