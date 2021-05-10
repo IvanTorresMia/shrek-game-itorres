@@ -3,9 +3,9 @@ import React from "react";
 function Score(props) {
   return (
     <div className="Score">
-      <h3 className="message">{props.message}</h3>
+      <h3 className={props.messageStyle}>{props.message}</h3>
       <h5>
-        Score: {props.score} | Top Score: {props.topScore}
+        Score: <span className={props.scoreStyle}>{props.score}</span>  | Top Score: <span className={props.topScoreStyle}>{props.topScore}</span>
       </h5>
     </div>
   );
